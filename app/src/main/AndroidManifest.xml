@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.yektv">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:label="TaraftarEX TV"
+        android:icon="@drawable/logo"
+        android:allowBackup="true"
+        android:supportsRtl="true">
+
+        <!-- SplashActivity: açılış ekranı -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- ListSelectionActivity: kullanıcı seçimi ekranı -->
+        <activity android:name=".ListSelectionActivity" />
+
+        <!-- MainActivity: M3U listesi ekranı -->
+        <activity android:name=".MainActivity" />
+
+        <!-- M3U2Activity: Yeni M3U 2. liste ekranı -->
+        <activity android:name=".M3U2Activity" />
+
+        <!-- ManualListActivity: Manuel liste ekranı -->
+        <activity android:name=".ManualListActivity" />
+
+        <!-- PlayerActivity: video oynatıcı -->
+        <activity
+            android:name=".PlayerActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <!-- PlayerWithHeadersActivity: referer, origin, userAgent destekli video oynatıcı -->
+        <activity
+            android:name=".PlayerWithHeadersActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+    </application>
+</manifest>
