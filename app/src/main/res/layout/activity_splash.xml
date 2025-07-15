@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="384dp"
+        android:gravity="center"
+        android:text="TaraftarEX"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textWelcome"
+        android:layout_width="253dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="HOŞGELDİNİZ"
+        android:textColor="#611609"
+        android:textSize="26sp"
+        android:fontFamily="sans-serif" />
+
+    <View
+        android:layout_width="135dp"
+        android:layout_height="261dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textFooter"
+        android:text="UPDATED BY DERSEV"
+        android:textColor="#FF4081"
+        android:textSize="16sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-condensed"/>
+
+</LinearLayout>
